@@ -1,0 +1,362 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nworst 2
+        -max_paths 10
+Design : M216A_TopModule
+Version: M-2016.12-SP2
+Date   : Thu Dec  7 17:30:29 2023
+****************************************
+
+Operating Conditions: ss0p95v125c   Library: saed32rvt_ss0p95v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: clk_gen/counter_reg[0]
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: rst_gen/rst_F_reg
+            (rising edge-triggered flip-flop clocked by clk_i)
+  Path Group: clk_i
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  M216A_TopModule    8000                  saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_i (rise edge)                               0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  clk_gen/counter_reg[0]/CLK (DFFARX1_RVT)              0.0000     0.0000 r
+  clk_gen/counter_reg[0]/QN (DFFARX1_RVT)               0.0418     0.0418 r
+  U1612/Y (NAND2X0_RVT)                                 0.0461     0.0879 f
+  U1611/Y (AO22X1_RVT)                                  0.0238     0.1117 f
+  rst_gen/rst_F_reg/D (DFFX1_RVT)                       0.0000     0.1117 f
+  data arrival time                                                0.1117
+
+  clock clk_i (rise edge)                               0.1500     0.1500
+  clock network delay (ideal)                           0.0000     0.1500
+  clock uncertainty                                    -0.0150     0.1350
+  rst_gen/rst_F_reg/CLK (DFFX1_RVT)                     0.0000     0.1350 r
+  library setup time                                   -0.0127     0.1223
+  data required time                                               0.1223
+  --------------------------------------------------------------------------
+  data required time                                               0.1223
+  data arrival time                                               -0.1117
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0106
+
+
+  Startpoint: clk_gen/counter_reg[1]
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: rst_gen/rst_F_reg
+            (rising edge-triggered flip-flop clocked by clk_i)
+  Path Group: clk_i
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  M216A_TopModule    8000                  saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_i (rise edge)                               0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  clk_gen/counter_reg[1]/CLK (DFFARX1_RVT)              0.0000     0.0000 r
+  clk_gen/counter_reg[1]/QN (DFFARX1_RVT)               0.0398     0.0398 r
+  U1612/Y (NAND2X0_RVT)                                 0.0460     0.0858 f
+  U1611/Y (AO22X1_RVT)                                  0.0238     0.1096 f
+  rst_gen/rst_F_reg/D (DFFX1_RVT)                       0.0000     0.1096 f
+  data arrival time                                                0.1096
+
+  clock clk_i (rise edge)                               0.1500     0.1500
+  clock network delay (ideal)                           0.0000     0.1500
+  clock uncertainty                                    -0.0150     0.1350
+  rst_gen/rst_F_reg/CLK (DFFX1_RVT)                     0.0000     0.1350 r
+  library setup time                                   -0.0127     0.1223
+  data required time                                               0.1223
+  --------------------------------------------------------------------------
+  data required time                                               0.1223
+  data arrival time                                               -0.1096
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0127
+
+
+  Startpoint: clk_gen/counter_reg[0]
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: clk_gen/counter_reg[1]
+            (rising edge-triggered flip-flop clocked by clk_i)
+  Path Group: clk_i
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  M216A_TopModule    8000                  saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_i (rise edge)                               0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  clk_gen/counter_reg[0]/CLK (DFFARX1_RVT)              0.0000     0.0000 r
+  clk_gen/counter_reg[0]/Q (DFFARX1_RVT)                0.0520     0.0520 r
+  U2002/Y (NAND2X0_RVT)                                 0.0288     0.0807 f
+  U2001/Y (NAND2X0_RVT)                                 0.0209     0.1016 r
+  clk_gen/counter_reg[1]/D (DFFARX1_RVT)                0.0000     0.1016 r
+  data arrival time                                                0.1016
+
+  clock clk_i (rise edge)                               0.1500     0.1500
+  clock network delay (ideal)                           0.0000     0.1500
+  clock uncertainty                                    -0.0150     0.1350
+  clk_gen/counter_reg[1]/CLK (DFFARX1_RVT)              0.0000     0.1350 r
+  library setup time                                   -0.0173     0.1177
+  data required time                                               0.1177
+  --------------------------------------------------------------------------
+  data required time                                               0.1177
+  data arrival time                                               -0.1016
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0161
+
+
+  Startpoint: clk_gen/counter_reg[1]
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: rst_gen/rst_E_reg
+            (rising edge-triggered flip-flop clocked by clk_i)
+  Path Group: clk_i
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  M216A_TopModule    8000                  saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_i (rise edge)                               0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  clk_gen/counter_reg[1]/CLK (DFFARX1_RVT)              0.0000     0.0000 r
+  clk_gen/counter_reg[1]/Q (DFFARX1_RVT)                0.0528     0.0528 f
+  U1615/Y (NAND2X0_RVT)                                 0.0298     0.0825 r
+  U1614/Y (AO22X1_RVT)                                  0.0207     0.1032 r
+  rst_gen/rst_E_reg/D (DFFX1_RVT)                       0.0000     0.1032 r
+  data arrival time                                                0.1032
+
+  clock clk_i (rise edge)                               0.1500     0.1500
+  clock network delay (ideal)                           0.0000     0.1500
+  clock uncertainty                                    -0.0150     0.1350
+  rst_gen/rst_E_reg/CLK (DFFX1_RVT)                     0.0000     0.1350 r
+  library setup time                                   -0.0150     0.1200
+  data required time                                               0.1200
+  --------------------------------------------------------------------------
+  data required time                                               0.1200
+  data arrival time                                               -0.1032
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0168
+
+
+  Startpoint: clk_gen/counter_reg[0]
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: rst_gen/rst_E_reg
+            (rising edge-triggered flip-flop clocked by clk_i)
+  Path Group: clk_i
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  M216A_TopModule    8000                  saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_i (rise edge)                               0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  clk_gen/counter_reg[0]/CLK (DFFARX1_RVT)              0.0000     0.0000 r
+  clk_gen/counter_reg[0]/Q (DFFARX1_RVT)                0.0530     0.0530 f
+  U1615/Y (NAND2X0_RVT)                                 0.0291     0.0822 r
+  U1614/Y (AO22X1_RVT)                                  0.0207     0.1028 r
+  rst_gen/rst_E_reg/D (DFFX1_RVT)                       0.0000     0.1028 r
+  data arrival time                                                0.1028
+
+  clock clk_i (rise edge)                               0.1500     0.1500
+  clock network delay (ideal)                           0.0000     0.1500
+  clock uncertainty                                    -0.0150     0.1350
+  rst_gen/rst_E_reg/CLK (DFFX1_RVT)                     0.0000     0.1350 r
+  library setup time                                   -0.0150     0.1200
+  data required time                                               0.1200
+  --------------------------------------------------------------------------
+  data required time                                               0.1200
+  data arrival time                                               -0.1028
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0172
+
+
+  Startpoint: clk_gen/counter_reg[1]
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: rst_gen/rst_D_reg
+            (rising edge-triggered flip-flop clocked by clk_i)
+  Path Group: clk_i
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  M216A_TopModule    8000                  saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_i (rise edge)                               0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  clk_gen/counter_reg[1]/CLK (DFFARX1_RVT)              0.0000     0.0000 r
+  clk_gen/counter_reg[1]/Q (DFFARX1_RVT)                0.0528     0.0528 f
+  U2003/Y (NAND2X0_RVT)                                 0.0287     0.0814 r
+  U1613/Y (AO22X1_RVT)                                  0.0207     0.1021 r
+  rst_gen/rst_D_reg/D (DFFX1_RVT)                       0.0000     0.1021 r
+  data arrival time                                                0.1021
+
+  clock clk_i (rise edge)                               0.1500     0.1500
+  clock network delay (ideal)                           0.0000     0.1500
+  clock uncertainty                                    -0.0150     0.1350
+  rst_gen/rst_D_reg/CLK (DFFX1_RVT)                     0.0000     0.1350 r
+  library setup time                                   -0.0150     0.1200
+  data required time                                               0.1200
+  --------------------------------------------------------------------------
+  data required time                                               0.1200
+  data arrival time                                               -0.1021
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0179
+
+
+  Startpoint: clk_gen/counter_reg[1]
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: clk_gen/counter_reg[1]
+            (rising edge-triggered flip-flop clocked by clk_i)
+  Path Group: clk_i
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  M216A_TopModule    8000                  saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_i (rise edge)                               0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  clk_gen/counter_reg[1]/CLK (DFFARX1_RVT)              0.0000     0.0000 r
+  clk_gen/counter_reg[1]/Q (DFFARX1_RVT)                0.0518     0.0518 r
+  U2003/Y (NAND2X0_RVT)                                 0.0280     0.0798 f
+  U2001/Y (NAND2X0_RVT)                                 0.0190     0.0988 r
+  clk_gen/counter_reg[1]/D (DFFARX1_RVT)                0.0000     0.0988 r
+  data arrival time                                                0.0988
+
+  clock clk_i (rise edge)                               0.1500     0.1500
+  clock network delay (ideal)                           0.0000     0.1500
+  clock uncertainty                                    -0.0150     0.1350
+  clk_gen/counter_reg[1]/CLK (DFFARX1_RVT)              0.0000     0.1350 r
+  library setup time                                   -0.0173     0.1177
+  data required time                                               0.1177
+  --------------------------------------------------------------------------
+  data required time                                               0.1177
+  data arrival time                                               -0.0988
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0189
+
+
+  Startpoint: clk_gen/counter_reg[1]
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: rst_gen/rst_D_reg
+            (rising edge-triggered flip-flop clocked by clk_i)
+  Path Group: clk_i
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  M216A_TopModule    8000                  saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_i (rise edge)                               0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  clk_gen/counter_reg[1]/CLK (DFFARX1_RVT)              0.0000     0.0000 r
+  clk_gen/counter_reg[1]/Q (DFFARX1_RVT)                0.0518     0.0518 r
+  U2003/Y (NAND2X0_RVT)                                 0.0280     0.0798 f
+  U1613/Y (AO22X1_RVT)                                  0.0208     0.1006 f
+  rst_gen/rst_D_reg/D (DFFX1_RVT)                       0.0000     0.1006 f
+  data arrival time                                                0.1006
+
+  clock clk_i (rise edge)                               0.1500     0.1500
+  clock network delay (ideal)                           0.0000     0.1500
+  clock uncertainty                                    -0.0150     0.1350
+  rst_gen/rst_D_reg/CLK (DFFX1_RVT)                     0.0000     0.1350 r
+  library setup time                                   -0.0106     0.1244
+  data required time                                               0.1244
+  --------------------------------------------------------------------------
+  data required time                                               0.1244
+  data arrival time                                               -0.1006
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0238
+
+
+  Startpoint: clk_gen/counter_reg[0]
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: clk_gen/counter_reg[0]
+            (rising edge-triggered flip-flop clocked by clk_i)
+  Path Group: clk_i
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  M216A_TopModule    8000                  saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_i (rise edge)                               0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  clk_gen/counter_reg[0]/CLK (DFFARX1_RVT)              0.0000     0.0000 r
+  clk_gen/counter_reg[0]/QN (DFFARX1_RVT)               0.0418     0.0418 r
+  clk_gen/counter_reg[0]/D (DFFARX1_RVT)                0.0000     0.0418 r
+  data arrival time                                                0.0418
+
+  clock clk_i (rise edge)                               0.1500     0.1500
+  clock network delay (ideal)                           0.0000     0.1500
+  clock uncertainty                                    -0.0150     0.1350
+  clk_gen/counter_reg[0]/CLK (DFFARX1_RVT)              0.0000     0.1350 r
+  library setup time                                   -0.0158     0.1192
+  data required time                                               0.1192
+  --------------------------------------------------------------------------
+  data required time                                               0.1192
+  data arrival time                                               -0.0418
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0774
+
+
+  Startpoint: clk_gen/counter_reg[0]
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: clk_gen/counter_reg[0]
+            (rising edge-triggered flip-flop clocked by clk_i)
+  Path Group: clk_i
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  M216A_TopModule    8000                  saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_i (rise edge)                               0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  clk_gen/counter_reg[0]/CLK (DFFARX1_RVT)              0.0000     0.0000 r
+  clk_gen/counter_reg[0]/QN (DFFARX1_RVT)               0.0372     0.0372 f
+  clk_gen/counter_reg[0]/D (DFFARX1_RVT)                0.0000     0.0372 f
+  data arrival time                                                0.0372
+
+  clock clk_i (rise edge)                               0.1500     0.1500
+  clock network delay (ideal)                           0.0000     0.1500
+  clock uncertainty                                    -0.0150     0.1350
+  clk_gen/counter_reg[0]/CLK (DFFARX1_RVT)              0.0000     0.1350 r
+  library setup time                                   -0.0118     0.1232
+  data required time                                               0.1232
+  --------------------------------------------------------------------------
+  data required time                                               0.1232
+  data arrival time                                               -0.0372
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0860
+
+
+1
